@@ -1,0 +1,274 @@
+.articles-active{
+    background-color: #f3bd49 !important;
+    color: #060afc !important;
+}
+
+main{
+    width: 100%;
+    display: flex;
+    
+    .carousel{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        .onglets{
+            align-items: center;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-around;
+            width: 100%;
+            height: 5rem;
+            background-color: honeydew;
+            
+            input{
+                display: none;
+            }
+
+            label{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                background-color: #125050;
+                color: whitesmoke;
+                border-radius: 80px;
+                padding-left: 0.6rem;
+                padding-right: 0.6rem;
+                padding-top: 0.5rem;
+                padding-bottom: 0.4rem;
+                text-align: center;
+                width: 5%;
+            }
+        }
+
+        .onglets:has(#infinix-fr:checked) ~ .brand.infinix, .onglets:has(#infinix-en:checked) ~ .brand.infinix{
+            display: flex;
+            /* background-color: blue; */
+        }
+
+        .onglets:has(#samsung-fr:checked) ~ .brand.samsung, .onglets:has(#samsung-en:checked) ~ .brand.samsung{
+            display: flex;
+            /* background-color: red; */
+        }
+
+        .onglets:has(#itel-fr:checked) ~ .brand.itel, .onglets:has(#itel-en:checked) ~ .brand.itel{
+            display: flex;
+            /* background-color: yellow; */
+        }
+
+        .onglets:has(#tecno-fr:checked) ~ .brand.tecno, .onglets:has(#tecno-en:checked) ~ .brand.tecno{
+            display: flex;
+            /* background-color: orange; */
+        }
+
+        .onglets:has(#redmi-fr:checked) ~ .brand.redmi, .onglets:has(#redmi-en:checked) ~ .brand.redmi{
+            display: flex;
+            /* background-color: cyan; */
+        }
+
+        .onglets:has(#iphone-fr:checked) ~ .brand.iphone, .onglets:has(#iphone-en:checked) ~ .brand.iphone{
+            display: flex;
+            /* background-color: gray; */
+        }
+
+        .brand{
+            width: 100%;
+            height: 30rem;
+            display: none;
+
+            .computer, .mobile{
+                display: flex;
+                width: 98%;
+                height: 96%;
+                padding-left: 1%;
+                padding-right: 1%;
+
+                .left-slide, .right-slide{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 1%;
+
+                    label{
+                        cursor: pointer;
+                    }
+                }
+
+                input{
+                    display: none;
+                }
+
+                .slider{
+                    width: 96%;
+                    height: 100%;
+                    position: relative;
+                    padding: 1%;
+
+                    .six, .four{
+                        width: 98%;
+                        height: 98%;
+                        display: flex;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        position: absolute;
+                        justify-content: space-around;
+                        visibility: hidden;
+                        opacity: 0;
+
+
+                        .phones{
+                            width: 30%;
+                            height: 45%;
+                            display: flex;
+                            flex-direction: row;
+                            flex-wrap: wrap;
+
+                            .img{
+                                height: 50%;
+                                width: 80%;
+                                border: 1px solid;
+
+                                img{
+                                    width: 100%;
+                                    height: 100%;
+                                }
+                            }
+
+                            .description{
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                padding: 2px;
+                                height: 10%;
+                                width: 80%;
+                                text-align: center;
+                            }
+
+                            .stock-prices{
+                                height: 40%;
+                                width: 50%;
+                                display: flex;
+                                flex-direction: column;
+                                gap: 1.1rem;
+
+                                .price{
+                                    display: flex;
+                                    flex-direction: column;
+
+                                    .oldprice{
+                                        text-decoration: line-through;
+                                        color: red;
+                                    }
+                                }
+                            }
+
+                            .more{
+                                height: 40%;
+                                width: 30%;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+
+                                a{
+                                    border-radius: 80px;
+                                    border: none;
+                                    text-decoration: none;
+                                    text-align: center;
+                                    padding: 0.5rem;
+                                    background-color: #fbbc05;
+                                    text-transform: capitalize;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .infinix:has(#infinix-comp-left-fr:checked), .infinix:has(#infinix-comp-left-en:checked){
+                .slider>.slide1{
+                    visibility: visible;
+                    opacity: 1;
+                }
+            }
+
+            .infinix:has(#infinix-comp-right-fr:checked), .infinix:has(#infinix-comp-right-en:checked){
+                .slider>.slide2{
+                    visibility: visible;
+                    opacity: 1;
+                }
+            }
+
+            .samsung:has(#samsung-comp-left-fr:checked), .samsung:has(#samsung-comp-left-en:checked){
+                .slider>.slide1{
+                    visibility: visible;
+                    opacity: 1;
+                }
+            }
+
+            .samsung:has(#samsung-comp-right-fr:checked), .samsung:has(#samsung-comp-right-en:checked){
+                .slider>.slide2{
+                    visibility: visible;
+                    opacity: 1;
+                }
+            }
+
+            .itel:has(#itel-comp-left-fr:checked), .itel:has(#itel-comp-left-en:checked){
+                .slider>.slide1{
+                    visibility: visible;
+                    opacity: 1;
+                }
+            }
+            
+            .itel:has(#itel-comp-right-fr:checked), .itel:has(#itel-comp-right-en:checked){
+                .slider>.slide2{
+                    visibility: visible;
+                    opacity: 1;
+                }
+            }
+
+            .tecno:has(#tecno-comp-left-fr:checked), .tecno:has(#tecno-comp-left-en:checked){
+                .slider>.slide1{
+                    visibility: visible;
+                    opacity: 1;
+                }
+            }
+            
+            .tecno:has(#tecno-comp-right-fr:checked), .tecno:has(#tecno-comp-right-en:checked){
+                .slider>.slide2{
+                    visibility: visible;
+                    opacity: 1;
+                }
+            }
+
+            .redmi:has(#redmi-comp-left-fr:checked), .redmi:has(#redmi-comp-left-en:checked){
+                .slider>.slide1{
+                    visibility: visible;
+                    opacity: 1;
+                }
+            }
+            
+            .redmi:has(#redmi-comp-right-fr:checked), .redmi:has(#redmi-comp-right-en:checked){
+                .slider>.slide2{
+                    visibility: visible;
+                    opacity: 1;
+                }
+            }
+
+            .iphone:has(#iphone-comp-left-fr:checked), .iphone:has(#iphone-comp-left-en:checked){
+                .slider>.slide1{
+                    visibility: visible;
+                    opacity: 1;
+                }
+            }
+            
+            .iphone:has(#iphone-comp-right-fr:checked), .iphone:has(#iphone-comp-right-en:checked){
+                .slider>.slide2{
+                    visibility: visible;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,21 @@
+@media screen and (max-width: 768px) {
+    .onglets{
+        label{
+            width: 10% !important;
+            font-size: 0.5rem;
+            padding: 0.3rem;
+        }
+    }
+
+    .brand{
+        font-size: 0.7rem;
+    }
+
+    .more{
+        a{
+            padding: 0.2rem !important;
+            width: 100%;
+            font-size: 0.4rem;
+        }
+    }
+}

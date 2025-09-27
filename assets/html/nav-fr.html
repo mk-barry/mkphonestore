@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nav-fr</title>
+</head>
+<body>
+    <div class="logo">
+        <img src="assets/img/logo/mk-logo6.png" alt="logo">
+    </div>
+    <div class="links">
+        <a href="index.html" class="home-active">accueil</a>
+        <a href="articles.html" class="articles-active">articles</a>
+        <a href="reparation.html" class="repair-active">réparation</a>
+        <a href="assets/html/login.html" class="account-active">mon compte</a>
+    </div>
+    <div class="buttons">
+        <span class="option" onclick="changelanguage('en')">
+            <span class="bi bi-translate"></span>
+            <span>EN</span>
+        </span>
+        <span id="toggle-theme-fr" class="option" onclick="toggleTheme(this)">
+            <span class="bi bi-sun-fill" id="light-icon-fr"></span>
+            <span class="bi bi-moon" id="dark-icon-fr"></span>
+        </span>
+    </div>
+</body>
+</html>

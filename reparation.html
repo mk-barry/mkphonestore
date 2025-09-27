@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../booticons/font/bootstrap-icons.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/all-pc.css">
+    <link rel="stylesheet" href="assets/css/all-mobile.css">
+    <link rel="stylesheet" href="assets/css/all-tablet.css">
+    <link rel="stylesheet" href="assets/css/repair-computer.css">
+    <link rel="stylesheet" href="assets/css/repair-tablet.css">
+    <link rel="stylesheet" href="assets/css/repair-mobile.css">
+    <title>repair services</title>
+</head>
+<body>
+    <div id="en">
+        <nav id="nav-en">
+
+        </nav>
+        <main>
+            <h4>Welcome to the repair service of <span>mk-store</span></h4>
+            <form action="" method="post">
+                <fieldset class="me">
+                    <legend>My informations</legend>
+                    <label for="nom-en">
+                        Your name
+                        <input type="text" name="nom" id="nom-en" class="nom" required maxlength="20">
+                    </label>
+                    <label for="prenom-en">
+                        your surname
+                        <input type="text" name="prenom" id="prenom-en" class="prenom" required maxlength="20">
+                    </label>
+                    <label for="email-en">
+                        your email
+                    <input type="email" name="email" id="email-en" class="email" required>
+                    </label>
+                    <label for="adresse-en">
+                        your living place
+                        <input type="text" name="adresse" id="adresse-en" class="adresse" required maxlength="20">
+                    </label>
+                </fieldset>
+                <fieldset class="device">
+                    <legend>about my device</legend>
+                    <label for="marque-en">
+                        Which type of device do you use
+                        <select name="marque" id="marque-en" required>
+                            <option value="" selected>--types--</option>
+                            <option value="infinix">Infinix</option>
+                            <option value="samsung">Samsung</option>
+                            <option value="itel">Itel</option>
+                            <option value="tecno">Tecno</option>
+                            <option value="redmi">Redmi</option>
+                            <option value="iphone">iPhone</option>
+                            <option value="autre">Autre</option>
+                        </select>
+                        <input type="text" name="autre-marque" id="autre-marque-en" class="hidden" placeholder="precise the type" required maxlength="15">
+                    </label>
+                    <label for="serie-en">
+                        which's your device serial
+                        <select name="serie" id="serie-en">
+                            <option value="">--Select a type first--</option>
+                        </select>
+                        <!-- <label for="numero">
+                            Serial number
+                            <input type="number" name="infinix" class="infinix hidden" placeholder="20" max="60" min="1">
+                            <input type="number" name="samsung" class="samsung hidden" placeholder="20" max="25" min="1">
+                            <input type="number" name="itel" class="itel hidden" placeholder="20" max="80" min="1">
+                            <input type="number" name="tecno" class="tecno hidden" placeholder="20" max="40" min="1">
+                            <input type="number" name="redmi" class="redmi hidden" placeholder="20" max="20" min="1">
+                        </label> -->
+                        <label for="infinix-en" class="infinix hidden">
+                            Numéro de série
+                            <input type="number" name="infinix" id="infinix-en" placeholder="20" max="60" min="1">
+                        </label>
+                        <label for="samsung-en" class="samsung hidden">
+                            Numéro de série
+                            <input type="number" name="samsung" id="samsung-en" placeholder="20" max="25" min="1">
+                        </label>
+                        <label for="itel-en" class="itel hidden">
+                            Numéro de série
+                            <input type="number" name="itel" id="itel-en" placeholder="20" max="80" min="1">
+                        </label>
+                        <label for="tecno-en" class="tecno hidden">
+                            Numéro de série
+                            <input type="number" name="tecno" id="tecno-en" placeholder="20" max="40" min="1">
+                        </label>
+                        <label for="redmi-en" class="redmi hidden">
+                            Numéro de série
+                            <input type="number" name="redmi" id="redmi-en" placeholder="20" max="20" min="1">
+                        </label>
+                    </label>
+                    <label for="damaged-zone-en">
+                        <textarea name="damaged-zone" id="damaged-zone-en" class="damaged-zone" placeholder="Describe your device issues here" cols="50" rows="5" required maxlength="100"></textarea>
+                    </label>
+                    <label for="deposite-date-en">
+                        Date and hour when you give us your device
+                        <input type="datetime-local" id="deposite-date-en" name="deposite-date" class="deposite-date">
+                    </label>
+                </fieldset>
+                <input type="submit" value="Submit" class="submit">
+            </form>
+        </main>
+        <footer id="footer-en">
+
+        </footer>
+    </div>
+    <div id="fr">
+        <nav id="nav-fr">
+
+        </nav>
+        <main>
+            <h4>Bienvenue au service de réparation de <span>mk-store</span></h4>
+            <form action="" method="post">
+                <fieldset class="me">
+                    <legend>Mes informations</legend>
+                    <label for="nom-fr">
+                        Votre nom
+                        <input type="text" name="nom" id="nom-fr" class="nom" required maxlength="20">
+                    </label>
+                    <label for="prenom-fr">
+                        Votre prénom
+                        <input type="text" name="prenom" id="prenom-fr" class="prenom" required maxlength="20">
+                    </label>
+                    <label for="email-fr">
+                    Votre email
+                    <input type="email" name="email" id="email-fr" class="email" required>
+                    </label>
+                    <label for="adresse-fr">
+                        Votre lieu de résidence
+                        <input type="text" name="adresse" id="adresse-fr" class="adresse" required maxlength="20">
+                    </label>
+                </fieldset>
+                <fieldset class="device">
+                    <legend>à propos de mon appareil</legend>
+                    <label for="marque-fr">
+                        Quelle est la marque de l'appareil
+                        <select name="marque" id="marque-fr" required>
+                            <option value="" selected>--marques--</option>
+                            <option value="infinix">Infinix</option>
+                            <option value="samsung">Samsung</option>
+                            <option value="itel">Itel</option>
+                            <option value="tecno">Tecno</option>
+                            <option value="redmi">Redmi</option>
+                            <option value="iphone">iPhone</option>
+                            <option value="autre">Autre</option>
+                        </select>
+                        <input type="text" name="autre-marque" id="autre-marque-fr" class="hidden" placeholder="précisez la marque" required maxlength="15">
+                    </label>
+                    <label for="serie-fr">
+                        Quelle est la série
+                        <select name="serie" id="serie-fr">
+                            <option value="">--Sélectionnez d'abord une marque--</option>
+                        </select>
+                        <!-- <label for="numero">
+                            Numéro de série
+                            <input type="number" name="infinix" class="infinix hidden" placeholder="20" max="60" min="1">
+                            <input type="number" name="samsung" class="samsung hidden" placeholder="20" max="25" min="1">
+                            <input type="number" name="itel" class="itel hidden" placeholder="20" max="80" min="1">
+                            <input type="number" name="tecno" class="tecno hidden" placeholder="20" max="40" min="1">
+                            <input type="number" name="redmi" class="redmi hidden" placeholder="20" max="20" min="1">
+                        </label> -->
+                        <label for="infinix-fr" class="infinix hidden">
+                            Numéro de série
+                            <input type="number" name="infinix" id="infinix-fr" placeholder="20" max="60" min="1">
+                        </label>
+                        <label for="samsung-fr" class="samsung hidden">
+                            Numéro de série
+                            <input type="number" name="samsung" id="samsung-fr" placeholder="20" max="25" min="1">
+                        </label>
+                        <label for="itel-fr" class="itel hidden">
+                            Numéro de série
+                            <input type="number" name="itel" id="itel-fr" placeholder="20" max="80" min="1">
+                        </label>
+                        <label for="tecno-fr" class="tecno hidden">
+                            <span>Numéro de série</span>
+                            <input type="number" name="tecno" id="tecno-fr" placeholder="20" max="40" min="1">
+                        </label>
+                        <label for="redmi-fr" class="redmi hidden">
+                            Numéro de série
+                            <input type="number" name="redmi" id="redmi-fr" placeholder="20" max="20" min="1">
+                        </label>
+                    </label>
+                    <label for="damaged-zone-fr">
+                        <textarea name="damaged-zone" id="damaged-zone-fr" class="damaged-zone" placeholder="Décrivez le problème que rencontre votre appareil" cols="50" rows="5" required maxlength="100"></textarea>
+                    </label>
+                    <label for="deposite-date-fr">
+                        Date et heure auxquelles vous nous confiez l'appareil
+                        <input type="datetime-local" name="deposite-date" id="deposite-date-fr" class="deposite-date">
+                    </label>
+                </fieldset>
+                <input type="submit" value="Soumettre" class="submit">
+            </form>
+        </main>
+        <footer id="footer-fr">
+
+        </footer>
+    </div>
+    <script src="assets/js/all.js"></script>
+</body>
+</html>

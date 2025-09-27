@@ -1,0 +1,73 @@
+@media screen and (max-width: 768px){
+    #fr, #en{
+        nav{
+            /* border: 1px solid; */
+            width: 96.8%;
+            padding-left: 8px;
+            padding-right: 8px;
+            justify-content: center;
+            .logo{
+                /* border: 1px solid; */
+                width: 10%;
+                align-items: center;
+                justify-content: center;
+                img{
+                    width: 4rem;
+                    height: 5rem;
+                }
+            }
+
+            .links{
+                /* border: 1px solid; */
+                gap: 0.5rem;
+                width: 70%;
+                justify-content: center;
+                a{
+                    width: 6rem;
+                    font-size: 0.5rem;
+                }
+            }
+
+            .buttons{
+                /* border: 1px solid; */
+                gap: 0.5rem;
+                width: 20%;
+                justify-content: center;
+                
+                .option{
+                    width: 2.5rem;
+                    
+                    span{
+                        font-size: 0.7rem;
+                    }
+                }
+            }
+        }
+
+        footer{
+            .infos{
+                .politics, .partners{
+                    span{
+                        font-size: 1rem;
+                    }
+
+                    .details{
+                        a{
+                            font-size: 0.7rem;
+                        }
+                    }
+                }
+            }
+
+            .social{
+                span{
+                    padding: 0.3rem;
+                }
+            }
+
+            .rights{
+                font-size: 0.7rem;
+            }
+        }
+    }
+}

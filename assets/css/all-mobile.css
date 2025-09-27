@@ -1,0 +1,80 @@
+@media screen and (max-width: 425px) {
+    #fr, #en{
+        nav{
+            height: 3rem !important;
+            justify-content: space-around !important;
+            .logo{
+                width: 10% !important;
+
+                img{
+                    width: 2rem !important;
+                    height: 2rem !important;
+                }
+            }
+
+            .links{
+                width: 60% !important;
+
+                a{
+                    width: 2.5rem !important;
+                    font-size: 0.3rem !important;
+                }
+            }
+
+            .buttons{
+                /* border: 1px solid; */
+                width: 10% !important;
+                justify-content: right !important;
+                gap: 0.1rem !important;
+
+                .option{
+                    border-radius: 5px !important;
+                    width: 1.8rem !important;
+                    height: 0.7rem !important;
+                    gap: 0.1rem !important;
+                    span{
+                        font-size: 0.3rem !important;
+                    }
+                }
+            }
+        }
+
+        footer{
+            .infos{
+                .politics, .partners{
+                    span{
+                        font-size: 0.7rem !important;
+                    }
+
+                    .details{
+                        a{
+                            font-size: 0.5rem !important;
+                        }
+                    }
+                }
+            }
+
+            .social{
+                gap: 1.5rem;
+                span{
+                    text-align: center !important;
+                    padding: 0.2rem !important;
+                    font-size: 0.5rem !important;
+                }
+            }
+
+            .rights{
+                font-size: 0.5rem !important;
+                word-spacing: 0.5rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {
+    
+}
+
+@media screen and (max-width: 320px) {
+
+}

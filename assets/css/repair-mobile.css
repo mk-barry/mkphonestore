@@ -1,0 +1,62 @@
+@media screen and (max-width: 425px) {
+        main{
+        h4{
+            font-size: 0.8rem !important;
+        }
+        form{
+
+            fieldset{
+                width: 90%;
+                flex-wrap: wrap;
+                gap: 0.8rem;
+                legend{
+                    font-size: 0.5rem;
+                }
+
+                label{
+                    width: 40% !important;
+                    height: 40% !important;
+                    gap: 0.8rem;
+
+                    input{
+                        width: 7rem;
+                    }
+
+                    select{
+                        width: 7rem !important;
+                    }
+
+                    textarea{
+                        width: 7rem !important;
+                    }
+                }
+            }
+            fieldset.me{
+                label{
+                    /* font-size: 0.4rem !important; */
+
+                    input{
+                        height: 0.5rem;
+                        font-size: 0.5rem;
+                    }
+                }
+            }
+
+            fieldset.device{
+                label{
+                    font-size: 0.6rem;
+
+                    textarea{
+                        height: 2rem;
+                        width: 10rem;
+                    }
+                }
+            }
+
+            .submit{
+                width: 20% !important;
+                font-size: 0.5rem !important;
+            }
+        }
+    }
+}

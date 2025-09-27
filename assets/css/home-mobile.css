@@ -1,0 +1,67 @@
+@media screen and (max-width: 425px) {
+    /* h4{
+        font-size: 1.5rem !important;
+    } */
+    #en, #fr{
+        main{
+            section h4{
+                font-size: 1.5rem;
+            }
+
+            .catalog{
+                .carousel{
+                    .slider{
+                        height: 35rem;
+                        .slide{
+                            .article{
+                                .img{
+                                    height: 30%;
+                                }
+                                .description{
+                                    font-size: 0.8rem;
+                                }
+
+                                .options{
+                                    height: 40%;
+                                    font-size: 0.6rem;
+
+                                    .stock-prices{
+                                        justify-content: center;
+                                        align-items: center;
+                                    }
+                                }
+
+                                .more{
+                                    /* align-items: flex-start; */
+                                    a{
+                                        font-size: 0.7rem;
+                                        padding: 0.3rem;
+                                        width: 100%;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .reparations{
+
+                p{
+                    font-size: 0.5rem;
+                }
+
+
+                h4{
+                    font-size: 1rem;
+                }
+                a{
+                    width: 10rem;
+                    font-size: 0.7rem;
+                    padding: 0.2rem;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
